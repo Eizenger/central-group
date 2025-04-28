@@ -1,7 +1,7 @@
 <script setup>
     import { onMounted } from 'vue';
     import Swiper from 'swiper';
-    import { Navigation, Pagination } from 'swiper/modules'; // 👈 correct
+    import { Navigation, Pagination } from 'swiper/modules'; 
     import 'swiper/css/bundle';
     import 'swiper/css/navigation';
     import 'swiper/css/pagination';
