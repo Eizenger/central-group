@@ -1,10 +1,13 @@
 <script setup>
     import { onMounted } from 'vue';
     import Swiper from 'swiper';
+    import { Navigation, Pagination } from 'swiper/modules'; // 👈 correct
     import 'swiper/css/bundle';
     import 'swiper/css/navigation';
-
+    import 'swiper/css/pagination';
+    
     onMounted(() => {
+      Swiper.use([Navigation, Pagination]);
       const swiper = new Swiper('.swiper', {
         speed: 1000,
         spaceBetween: 16,
@@ -23,12 +26,6 @@
           },
         },
 
-        // pagination
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-
         // navigation
         navigation: {
           nextEl: '.swiper-button-next',
@@ -41,6 +38,7 @@
           },
         },
       });
+      
     });
 
 </script>
@@ -77,5 +75,7 @@
   justify-content: center;
   align-items: center;
   font-size: 24px;
+  border: 1px solid #000;
+  border-radius: 16px;
 }
 </style>
