@@ -45,13 +45,13 @@
 
 <template>
     <div class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide rounded-2xl">Slide 1</div>
-            <div class="swiper-slide rounded-2xl">Slide 2</div>
-            <div class="swiper-slide rounded-2xl">Slide 3</div>
-            <div class="swiper-slide rounded-2xl">Slide 4</div>
-            <div class="swiper-slide rounded-2xl">Slide 5</div>
-            <div class="swiper-slide rounded-2xl">Slide 6</div>
+        <div class="swiper-wrapper items-center">
+            <div class="swiper-slide ">Slide 1</div>
+            <div class="swiper-slide ">Slide 2</div>
+            <div class="swiper-slide ">Slide 3</div>
+            <div class="swiper-slide ">Slide 4</div>
+            <div class="swiper-slide ">Slide 5</div>
+            <div class="swiper-slide ">Slide 6</div>
         </div>
 
 
@@ -77,5 +77,6 @@
   font-size: 24px;
   border: 1px solid #000;
   border-radius: 16px;
+  height: 400px;
 }
 </style>
